@@ -1,7 +1,7 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Structural approach to the deep learning method
+title: 
 author: |
 	Leonid A. Sevastianov\inst{1,3}
 	\and
