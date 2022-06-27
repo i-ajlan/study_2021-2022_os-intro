@@ -14,8 +14,8 @@ PDF_OPTIONS += --number-sections
 %.docx: %.md
 	-pandoc "$<" $(FILTERS) -o "$@"
 
-%.pdf: %.md
-	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(PDF_FORMAT_OPTIONS) -o "$@"
+# %.pdf: %.md
+# 	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(PDF_FORMAT_OPTIONS) -o "$@"
 
 %.pdf: %.docx
 	-unoconv "$<" "$@"
